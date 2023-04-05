@@ -1,0 +1,32 @@
+﻿<Window x:Class="_21._106_10_Restoran.Windows.WindowOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_21._106_10_Restoran.Windows"
+        mc:Ignorable="d"
+        Title="WindowOrder" MaxHeight="450" MaxWidth="600" MinHeight="450" MinWidth="600">
+    <Grid>
+
+        <DataGrid x:Name="dtg_orders" d:ItemsSource="{d:SampleData ItemCount=5}" AutoGenerateColumns="False" Margin="0,0,0,112" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="IdOrder" 
+                                 Binding="{Binding Path=IdOrder}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TimeOfOrder" 
+                                 Binding="{Binding Path=TimeOfOrder,StringFormat={}{0:dd.MM.yy hh:mm:ss}}"></DataGridTextColumn>
+                <DataGridTextColumn Header="EndTime" 
+                                 Binding="{Binding Path=EndTime,StringFormat={}{0:dd.MM.yy hh:mm:ss}}"></DataGridTextColumn>
+                <DataGridTextColumn Header="IdEmployee" 
+                                 Binding="{Binding Path=IdEmployee}"></DataGridTextColumn>
+                <DataGridTextColumn Header="IdTable" 
+                                 Binding="{Binding Path=IdTable}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel   Orientation="Horizontal" Width="360" HorizontalAlignment ="Center" Margin="0,348,0,10">
+            <Button x:Name="btn_add" Content="Добавить" Width="80" Margin="5,5,5,5" Click="btn_add_Click"/>
+            <Button x:Name="btn_delete" Content="Удалить" Width="80" Margin="5,5,5,5" Click="btn_delete_Click"/>
+            <Button x:Name="btn_red" Content="Изменить" Width="80" Margin="5,5,5,5" Click="btn_red_Click"/>
+            <Button x:Name="btn_delete_Copy" Content="Назад"  Width="80" Margin="5,5,5,5" Click="btn_back"/>
+        </StackPanel>
+    </Grid>
+</Window>

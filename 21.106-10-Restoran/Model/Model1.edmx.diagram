@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="61d4717b9a8c4cb28a8313fb31a22a9c" Name="Diagram1">
+        <EntityTypeShape EntityType="TSMModel.Booking" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.Client" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.Dish" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.Employee" Width="1.5" PointX="3.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.Ingredients" Width="1.5" PointX="8.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.JobTitle" Width="1.5" PointX="1.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.ListOfIngredients" Width="1.5" PointX="11" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.Order" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.OrderList" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.Products" Width="1.5" PointX="11" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.Provider" Width="1.5" PointX="8.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.sysdiagrams" Width="1.5" PointX="10.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSMModel.Table" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="TSMModel.FK_Booking_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_Booking_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_ListOfIngredients_Dish" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_OrderList_Dish" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_Employee_JobTitle" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_Order_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_ListOfIngredients_Ingredients" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_Products_Ingredients" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_Order_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_OrderList_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="TSMModel.FK_Products_Provider" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

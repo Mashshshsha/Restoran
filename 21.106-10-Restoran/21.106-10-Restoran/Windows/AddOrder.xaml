@@ -1,0 +1,23 @@
+﻿<Window x:Class="_21._106_10_Restoran.Windows.AddOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_21._106_10_Restoran.Windows"
+        mc:Ignorable="d"
+        Title="AddOrder" Height="450" Width="300" MinHeight="380" MinWidth="280">
+    <Grid>
+        <StackPanel Grid.Row ="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment ="Center">
+            <Label Content="Время заказа (ДД:ММ:ГГГГ ЧЧ:ММ)" />
+            <TextBox x:Name="tb_time_start" Height="30"/>
+            <Label Content="ID Стола" />
+            <TextBox x:Name="tb_Table" Height="30"/>
+            <Label Content="Время приготовления &#xA;заказа(ДД:ММ:ГГГГ ЧЧ:ММ)" />
+            <TextBox x:Name="tb_time_finish" Height="30" />
+            <Label Content="ID Сотрудника" />
+            <TextBox x:Name="tb_Employee" Height="30" />
+            <Button x:Name="btn_config" Margin="5,10,5 ,5" Content="Подтеврдить"  Click="btn_config_Click" Height="30"/>
+            <Button x:Name="btn_back" Margin="5,5,5 ,5" Content="Назад"  Click="btn_back_Click" Height="30" />
+        </StackPanel>
+    </Grid>
+</Window>
